@@ -3,20 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SearchPage">
 
-    <!-- Search Activity TextView -->
     <TextView
         android:id="@+id/searchActivityLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
-        android:text="Search Activity"
+        android:text="Search Advice"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <!-- Search EditText -->
     <EditText
         android:id="@+id/searchEditText"
         android:layout_width="match_parent"
@@ -25,9 +23,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Type activity here" />
+        android:hint="Type advice here" />
 
-    <!-- Search Button -->
     <Button
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
@@ -37,7 +34,6 @@
         android:layout_marginTop="16dp"
         android:text="Search" />
 
-    <!-- Search Result TextView -->
     <TextView
         android:id="@+id/searchResultLabel"
         android:layout_width="wrap_content"
@@ -49,15 +45,13 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <!-- Result RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/resultView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/searchResultLabel"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="112dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_weight="1" />
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
 </RelativeLayout>
